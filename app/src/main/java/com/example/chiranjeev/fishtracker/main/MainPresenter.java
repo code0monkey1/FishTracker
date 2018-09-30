@@ -18,5 +18,6 @@ public class MainPresenter implements MainContract.Presenter {
     @Override
     public void handleSignUpButtonClick() {
      view.showSignUpScreen();
+
     }
 }

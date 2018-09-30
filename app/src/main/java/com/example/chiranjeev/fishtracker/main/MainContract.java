@@ -6,7 +6,6 @@ package com.example.chiranjeev.fishtracker.main;
 public interface MainContract {
     interface MvpView{
         void showSignInScreen();
-
         void showSignUpScreen();
     }
     interface Presenter{

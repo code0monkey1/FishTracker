@@ -26,11 +26,13 @@ public class MainPresenterTest {
     public void handleSignInButtonClick() {
         mPresenter.handleSignInButtonClick();
         verify(mView).showSignInScreen();
+
     }
 
     @Test
     public void handleSignUpButtonClick() {
         mPresenter.handleSignUpButtonClick();
         verify(mView).showSignUpScreen();
+
     }
 }

@@ -6,5 +6,6 @@ public class SignInActivity implements SignInContract.MvpView {
 
     public SignInActivity(){
          presenter=new SignInPresenter(this);
+
     }
 }

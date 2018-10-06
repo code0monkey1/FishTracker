@@ -8,4 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button</>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="Button.Sign_Up">
+        <item name="android:text">Sign Up</item>
+    </style>
+
+    <style name="Button.Sign_In">
+        <item name="android:text">Sign In</item>
+    </style>
+
+    <style name="AppLogo">
+
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:src">@android:drawable/sym_def_app_icon</item>
+
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@android:color/holo_purple</item>
+    </style>
+
 </resources>

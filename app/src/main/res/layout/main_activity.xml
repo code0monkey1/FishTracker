@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -9,33 +10,22 @@
 
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
 
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
+        style="@style/LinearLayout"
         tools:context=".main.MainActivity">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
-            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageView style="@style/AppLogo" />
+
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{presenter::handleSignInButtonClick}"
-            android:text="Sign In" />
+            style="@style/Button.Sign_In"
+            android:onClick="@{presenter::handleSignInButtonClick}" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{presenter::handleSignUpButtonClick}"
-            android:text="Sign Up" />
+            style="@style/Button.Sign_Up"
+            android:onClick="@{presenter::handleSignUpButtonClick}" />
 
     </LinearLayout>
 

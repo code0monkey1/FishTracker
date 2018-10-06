@@ -1,5 +1,7 @@
 package com.example.chiranjeev.fishtracker.main;
 
+import android.view.View;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -24,14 +26,16 @@ public class MainPresenterTest {
 
     @Test
     public void handleSignInButtonClick() {
-        mPresenter.handleSignInButtonClick();
+        View view=null ;
+        mPresenter.handleSignInButtonClick(view);
         verify(mView).showSignInScreen();
 
     }
 
     @Test
     public void handleSignUpButtonClick() {
-        mPresenter.handleSignUpButtonClick();
+        View view=null;
+        mPresenter.handleSignUpButtonClick(view);
         verify(mView).showSignUpScreen();
 
     }
